@@ -17,28 +17,27 @@ let accessToken;
 //and its expiry time (without this we cannot connect to the Spotify API).
 //Because of this, every time the page loads, we check for an access token and its expiry time (and save
 //the info in variables for later use)
+if (typeof window === 'undefined') {
+  global.window = {}
+}
 
+window.onload = () =>{
+	const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
+	const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
 
-
-if(window){
-	window.onload = () =>{
-		const accessTokenMatch = window.location.href.match(/access_token=([^&]*)/);
-		const expiresInMatch = window.location.href.match(/expires_in=([^&]*)/);
-
-		//before we check for the access token, wait until we have the id of
-		//the authorization message container (so we can let the user know
-		//if the authorization was successful and when it expires)
-		function checkAuthContainer(){
-			if(!authContainer)
-				window.setTimeout(checkAuthContainer, 50);
-			else {
-				console.log(authContainer);
-				Spotify.getAccessToken();
-			}
+	//before we check for the access token, wait until we have the id of
+	//the authorization message container (so we can let the user know
+	//if the authorization was successful and when it expires)
+	function checkAuthContainer(){
+		if(!authContainer)
+			window.setTimeout(checkAuthContainer, 50);
+		else {
+			console.log(authContainer);
+			Spotify.getAccessToken();
 		}
-
-		if(accessTokenMatch && expiresInMatch)	checkAuthContainer();
 	}
+
+	if(accessTokenMatch && expiresInMatch)	checkAuthContainer();
 }
 
 //The purpose of this object is to connect to Spotify, get user authorization, retrieve songs,
