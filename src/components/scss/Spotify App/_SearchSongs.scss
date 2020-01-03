@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  body {
+    // background-color: olive;
+  }
+}
+
+body{
+	.search-songs{
+		@include center-buttons;
+	}
+}

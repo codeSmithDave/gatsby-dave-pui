@@ -1,0 +1,15 @@
+// @import 'basic';
+@import '../stylesContainer.scss';
+
+header{
+	.header-link-home{
+		color: $white;
+		font-weight: bold;
+		text-transform: uppercase;
+		transition: color 0.3s;
+
+		&:hover{
+			color: $light_pink;
+		}
+	}
+}

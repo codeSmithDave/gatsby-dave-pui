@@ -1,0 +1,51 @@
+body{
+	.song-list{
+		padding: 5px 5px 0 5px;
+
+		.song{
+			display: flex;
+			justify-content: space-between;
+			color: $grey1;
+			padding: 15px 10px;
+			background: $shadow_color;
+			margin-bottom: 5px;
+			transition: background 0.3s;
+
+			&:hover{
+				background: $light_purple2;
+			}
+
+			.song-info{
+				max-width: calc(100% - 50px);
+				display: block;
+				
+				div{
+					// width: 100%;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					padding-right: 15px;
+					margin-bottom: 5px;
+
+					&:last-of-type{
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.song-name{
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+			.album, .artist{
+				font-style: italic;
+				margin-right: 7px;
+			}
+
+			.info{
+				color: $light_purple;
+			}
+		}
+	}
+}

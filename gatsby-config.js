@@ -5,6 +5,9 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,3 +35,14 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+/*
+//Add the below code to the "plugins" section if you have any non css files
+- ie: scss mixins, variables, functions, etc - stuff that isn't css
+{
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: `@import "${__dirname}/src/components/scss/stylesContainer"`
+  }
+},
+*/

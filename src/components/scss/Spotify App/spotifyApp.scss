@@ -1,0 +1,13 @@
+// Misc - Fonts, Rsets, Default styles, bootstrap
+// @import '../bootstrap.min';
+// @import '../bootstrap-grid.min';
+@import '../styleReset';
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500i,700&display=swap');
+@import 'default';
+
+//Component styles
+@import 'button';
+@import 'song';
+@import 'SearchSongs';
+@import 'customPlaylist';
+@import 'spotifyAuthorize';

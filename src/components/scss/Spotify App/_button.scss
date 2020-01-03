@@ -1,0 +1,17 @@
+body{
+	.song-btn{
+		border: 1px solid $white;
+		background: $white;
+		padding: 0 20px;
+		transition: background 0.3s;
+		outline: none;
+
+		&:hover{
+			background: $light_purple;
+		}
+
+		&:active, &:focus{
+			background: $primary_color;
+		}
+	}
+}

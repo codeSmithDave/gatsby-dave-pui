@@ -620,3 +620,18 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/**************************/
+footer{
+  background: #333333;
+  color: #fff;
+  padding: 10px 0 !important;
+}
+
+footer a{
+  color: #fff !important;
+}
+
+footer a:hover{
+  color: #7b25d2 !important;
+}

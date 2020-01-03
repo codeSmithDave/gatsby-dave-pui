@@ -1,0 +1,25 @@
+$white: #fff;
+$black: #000;
+$red: #ff0000;
+$green: #12b361;
+$purple: #663399;
+$dark_purple: #3a0d67;
+$purple_hover: #7b25d2;
+$purple_active: #7713dc;
+$light_pink: #f1e2e2;
+
+body{
+	h1{font-size: 35PX;}
+	h2{font-size: 30px;}
+	h3{font-size: 25px;}
+
+	a{
+		color: $black;
+		transition: color 0.3s;
+
+		&:hover{
+			color: $dark_purple;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,100 @@
+// @import '../styleReset';
+// @import '../default/basic';
+@import '../../components/scss/stylesContainer';
+
+body{
+	.home-container{
+		padding: 75px 0;
+	}
+
+	.inner-home{
+		width: 95%;
+		margin: 0 auto;
+		max-width: 1200px;
+		// box-shadow: 0px 4px 4.75px 0.25px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 4.75px 2.25px rgba(0, 0, 0, 0.1);
+		position: relative;
+
+		&::before, &::after{
+			@include full-w-line;
+		}
+
+		&::before{
+			top: -15px;
+		}
+
+		&::after{
+			bottom: -15px;
+		}
+
+		.head-section{
+			margin-bottom: 70px;
+
+			p{
+				margin: 0 auto;
+				max-width: 500px;
+				// position: relative;
+
+				&::after{
+					@include mid-line;
+				}
+			}
+		}
+
+		.box-content{
+			.content-link-btn{
+				background: $purple;
+				color: $white;
+				padding: 10px 0;
+				font-size: 20px;
+				border: 1px solid $purple;
+				transition: background 0.3s;
+
+				&:hover{
+					background: $purple_hover;
+				}
+
+				&:active{
+					background: $purple_active;
+				}
+			}
+		}
+		
+	}
+}
+
+@media (min-width: 568px){
+	body{
+		.inner-home{
+			.head-section{
+				margin-bottom: 80px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	body{
+		.home-container{
+			padding: 100px 0;
+		}
+
+		.inner-home{
+			.heading-title{
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px){
+	body{
+		.home-container{
+			padding: 120px 0;
+		}
+	}
+}
+
+@mixin md-home(){
+	
+}

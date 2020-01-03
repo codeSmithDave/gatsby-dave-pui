@@ -1,0 +1,18 @@
+body{
+	.authorize-container{
+		color: $white;
+		display: flex;
+		padding: 30px 10px;
+		flex-wrap: wrap;
+		justify-content: center;
+		background: $dark_purple;
+		border: 1px solid $shadow_color;
+	    box-shadow: 0px 0px 5px 5px $dark_purple2;
+
+	    p{text-align: center;}
+
+	    button{
+	    	margin-right: 15px;
+	    }
+	}
+}

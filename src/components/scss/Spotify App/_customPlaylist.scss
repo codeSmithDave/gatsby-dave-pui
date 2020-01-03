@@ -1,0 +1,8 @@
+body{
+	.custom-playlist-container{
+		.playlist-container{
+			@include center-buttons;
+		}
+	}
+}
+
