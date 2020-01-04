@@ -32,14 +32,7 @@ const IndexPage = ( props ) => (
 					tech="JavaScript (Reactjs), HTML, CSS"
 					link="/spotify-app/"
 				/>
-				<BoxContent
-					// imgPath={props.data.file.childImageSharp.fluid}
-					title="Boxing Interval Timer"
-					description="The Spotify Music App is a Reactjs application
-		that lets the user search songs and create custom playlists"
-					tech="JavaScript (Reactjs), HTML, CSS"
-					link="/boxing-interval-timer/"
-				/>
+				
 			</BoxContentOuter>
 		</div>
 	</div>
