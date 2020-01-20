@@ -90,7 +90,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.angelfishFreshwater.childImageSharp.fluid.src
 				},
 				{
-					id: '1',
+					id: '5',
 					scientificName: 'chelmon rostratus',
 					commonName: 'copperband butterflyfish',
 					careLevel: 'difficult',
@@ -104,7 +104,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.copperbandTang.childImageSharp.fluid.src
 				},
 				{
-					id: '2',
+					id: '6',
 					scientificName: 'chrysiptera parasema',
 					commonName: 'yellowtail damselfish',
 					careLevel: 'easy',
@@ -118,7 +118,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowtailDamsel.childImageSharp.fluid.src
 				},
 				{
-					id: '3',
+					id: '7',
 					scientificName: 'zebrasoma flavescens',
 					commonName: 'yellow tang',
 					careLevel: 'easy',
@@ -132,7 +132,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowTang.childImageSharp.fluid.src
 				},
 				{
-					id: '4',
+					id: '8',
 					scientificName: 'Pterophyllum',
 					commonName: 'zebra angelfish',
 					careLevel: 'easy',
@@ -146,7 +146,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.angelfishFreshwater.childImageSharp.fluid.src
 				},
 				{
-					id: '1',
+					id: '9',
 					scientificName: 'chelmon rostratus',
 					commonName: 'copperband butterflyfish',
 					careLevel: 'difficult',
@@ -160,7 +160,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.copperbandTang.childImageSharp.fluid.src
 				},
 				{
-					id: '2',
+					id: '10',
 					scientificName: 'chrysiptera parasema',
 					commonName: 'yellowtail damselfish',
 					careLevel: 'easy',
@@ -174,7 +174,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowtailDamsel.childImageSharp.fluid.src
 				},
 				{
-					id: '3',
+					id: '11',
 					scientificName: 'zebrasoma flavescens',
 					commonName: 'yellow tang',
 					careLevel: 'easy',
@@ -188,7 +188,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowTang.childImageSharp.fluid.src
 				},
 				{
-					id: '4',
+					id: '12',
 					scientificName: 'Pterophyllum',
 					commonName: 'zebra angelfish',
 					careLevel: 'easy',
@@ -202,7 +202,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.angelfishFreshwater.childImageSharp.fluid.src
 				},
 				{
-					id: '1',
+					id: '13',
 					scientificName: 'chelmon rostratus',
 					commonName: 'copperband butterflyfish',
 					careLevel: 'difficult',
@@ -216,7 +216,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.copperbandTang.childImageSharp.fluid.src
 				},
 				{
-					id: '2',
+					id: '14',
 					scientificName: 'chrysiptera parasema',
 					commonName: 'yellowtail damselfish',
 					careLevel: 'easy',
@@ -230,7 +230,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowtailDamsel.childImageSharp.fluid.src
 				},
 				{
-					id: '3',
+					id: '15',
 					scientificName: 'zebrasoma flavescens',
 					commonName: 'yellow tang',
 					careLevel: 'easy',
@@ -244,7 +244,7 @@ class AquariumEncyclopedia extends React.Component{
 					imgPath: this.props.data.yellowTang.childImageSharp.fluid.src
 				},
 				{
-					id: '4',
+					id: '16',
 					scientificName: 'Pterophyllum',
 					commonName: 'zebra angelfish',
 					careLevel: 'easy',
