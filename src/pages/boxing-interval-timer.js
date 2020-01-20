@@ -6,7 +6,9 @@ import { graphql } from 'gatsby';
 import Layout from "../components/layout";
 // import Image from "../components/image";
 import SEO from "../components/seo";
+import GameLoop from "../components/GameLoop";
 import GameCanvas from "../components/GameCanvas";
+import PongPlayer from "../components/PongPlayer";
 
 class Game extends React.Component{
 	constructor(props){
@@ -20,25 +22,15 @@ class Game extends React.Component{
 		this.getCanvas = this.getCanvas.bind(this);
 	}
 
-	getCanvas(canvas){
-		
-
+	getCanvas(canvas, ctx){
 		this.setState({
 			canvas: canvas,
-			canvasCtx: canvas.getContext('2d')
+			canvasCtx: ctx
 		});
+	}
 
-		console.log(this.state.canvas);
-
-		// const canvas = this.refs.gameCanvas;
-		// const ctx = canvas.getContext('2d');
-		const img = new Image();
-		img.src = this.props.data.file.childImageSharp.fluid.src;
-		
-		// img.onload = () => {
-		// 	ctx.drawImage(img, 0, 0);
-		// 	ctx.fillStyle = 'black';
-		// };
+	componentDidUpdate(prevProps, prevState, snapshot){
+		// console.log(this.state.canvasCtx);
 	}
 
 	render(){
@@ -47,12 +39,15 @@ class Game extends React.Component{
 			    <SEO title="Home" />
 			    <div className="boxing-timer-container">
 					<div className="inner-boxing-timer pt-5 pb-5 pl-3 pr-3">
-						<GameCanvas 
+						<GameCanvas
 							shipGraphic={this.props.data.file.childImageSharp.fluid.src}
-							width={800}
-							height={800}
+							width={300}
+							height={300}
 							returnCanvas={this.getCanvas}
 						/>
+						<GameLoop canvas={this.state.canvas} canvasContext={this.state.canvasCtx} shipGraphic={this.props.data.file.childImageSharp.fluid.src} >
+							<PongPlayer canvas={this.state.canvas} canvasContext={this.state.canvasCtx} />
+						</GameLoop>
 					</div>
 				</div>
 			</Layout>

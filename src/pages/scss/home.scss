@@ -27,6 +27,10 @@ body{
 			bottom: -15px;
 		}
 
+		.obj-title{
+			font-size: 23px;
+		}
+
 		.head-section{
 			margin-bottom: 70px;
 
@@ -49,6 +53,9 @@ body{
 				font-size: 20px;
 				border: 1px solid $purple;
 				transition: background 0.3s;
+				// position: absolute;
+				// top: 100%;
+				// width: 100%;
 
 				&:hover{
 					background: $purple_hover;

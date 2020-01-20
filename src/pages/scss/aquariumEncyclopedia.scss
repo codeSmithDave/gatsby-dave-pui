@@ -1,0 +1,92 @@
+@import '../../components/scss/stylesContainer';
+
+body{
+	.inner-aquarium-encyclopedia{
+	    box-shadow: 0 0 3px 3px $light_grey;
+
+		#search-bar{
+			border: 1px solid $light_blue1;
+			box-shadow: none;
+			padding: 15px;
+			border-radius: 5px;
+			width: 80%;
+			text-align: center;
+		}
+
+		.accordion{
+			.card{
+				border: none;
+			}
+
+			.card-header{
+				background: transparent;
+				border-bottom: 2px solid $light_grey;
+
+				.btn-link{
+					margin-left: auto;
+				    margin-right: auto;
+				    display: block;
+				    background: $light_grey;
+				    color: $black;
+				    // box-shadow: 0 0 1px 1px rgba(0,0,0, 0.2);
+
+				    &, &:hover{
+				    	text-decoration: none;
+				    }
+
+				    &:hover{
+				    	background: #f7f7f7;
+				    }
+
+				    &:active{
+				    	background: #fafafa;
+				    }
+				}
+			}
+
+			.card-body{
+				background: $light_grey;
+			}
+
+			.card-body-inner{
+				background: $white;
+
+				ul{
+					// display: flex;
+					// flex-wrap: wrap;
+					// justify-content: center;
+
+					li{
+						// margin-right: 15px;
+
+						&:last-of-type{
+							margin-right: 0 !important;
+						}
+					}
+
+					label{
+
+					}
+				}
+
+				span{
+					color: $blue;
+
+				}
+			}
+		}
+	}
+
+	.accordion-body-collapse{
+		overflow: hidden;
+		border: 0 solid black;
+		max-height: 0;
+		transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), border 0.5s cubic-bezier(0, 1, 0, 1);
+	}
+
+	.accordion-body-open{
+		max-height: 1000px;
+		border: 1px solid black;
+	  transition: max-height 1s ease-in-out;
+	}
+}

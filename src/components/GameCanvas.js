@@ -8,44 +8,55 @@ class GameCanvas extends React.Component{
 			y: 0
 		};
 
-		this.MoveDown = this.MoveDown.bind(this);
-		this.GameTimer = this.GameTimer.bind(this);
+		this.moveDown = this.moveDown.bind(this);
+		this.gameTimer = this.gameTimer.bind(this);
 	}
 
 	componentDidMount(){
 		this.canvas = this.refs.gameCanvas;
 		this.ctx = this.canvas.getContext('2d');
-		this.img = new Image();
+		// this.img = new Image();
 
-		this.img.src = this.props.shipGraphic;
-		this.img.onload = () => {
-			this.ctx.drawImage(this.img, 0, this.state.y);
-		};
+		// this.img.src = this.props.shipGraphic;
+		// this.img.onload = () => {
+		// 	this.ctx.drawImage(this.img, 0, this.state.y);
+		// 	this.ctx.restore();
+		// };
 
 
 
-		// this.props.returnCanvas(canvas);
 
-		setInterval( () => {
-			this.setState((prevState) => ({
-				y: prevState.y + 3
-			}));
-		}, 100);
+
+		this.props.returnCanvas(this.canvas, this.ctx);
+
+		// setInterval( () => {
+		// 	this.setState((prevState) => ({
+		// 		y: prevState.y + 3
+		// 	}));
+		// }, 100);
 	}
 
 	componentDidUpdate(prevProps, prevState, snapshot){
 		// alert(prevState.y);
 
-		this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-		this.canvas = this.refs.gameCanvas;
-		this.ctx = this.canvas.getContext('2d');
-		this.img = new Image();
 
-		this.img.src = this.props.shipGraphic;
-		this.img.onload = () => {
-			this.ctx.drawImage(this.img, 0, prevState.y);
-		};
+
+
+
+		// this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+		// this.canvas = this.refs.gameCanvas;
+		// this.ctx = this.canvas.getContext('2d');
+		// this.img = new Image();
+
+		// this.img.src = this.props.shipGraphic;
+		// this.img.onload = () => {
+		// 	this.ctx.drawImage(this.img, 0, prevState.y);
+		// };
+
+
+
 
 
 
@@ -55,11 +66,11 @@ class GameCanvas extends React.Component{
 		// };
 	}
 
-	GameTimer(img, ctx){
+	gameTimer(img, ctx){
 
 	}
 
-	MoveDown(){
+	moveDown(){
 		this.setState((prevState) => ({
 			y: prevState.y + 4
 		}));

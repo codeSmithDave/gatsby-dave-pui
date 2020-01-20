@@ -14,7 +14,7 @@ import './scss/home.scss';
 
 const IndexPage = ( props ) => (
   <Layout>
-  
+  {console.log(props.data)}
     <SEO title="Home" />
     <div className="home-container">
 		<div className="inner-home pt-5 pb-5 pl-3 pr-3">
@@ -25,14 +25,39 @@ const IndexPage = ( props ) => (
 			</div>
 			<BoxContentOuter>
 				<BoxContent
-					imgPath={props.data.file.childImageSharp.fluid}
+					imgPath={props.data.aquariumEncyclopedia.childImageSharp.fluid}
+					title="Aquarium Encyclopedia"
+					description="The Spotify Music App is a Reactjs application
+		that lets the user search songs and create custom playlists"
+					tech="JavaScript (Reactjs), HTML, CSS"
+					link="/aquarium-encyclopedia/"
+				/>
+				<BoxContent
+					imgPath={props.data.spotifyApp.childImageSharp.fluid}
 					title="Spotify Music App"
 					description="The Spotify Music App is a Reactjs application
 		that lets the user search songs and create custom playlists"
 					tech="JavaScript (Reactjs), HTML, CSS"
 					link="/spotify-app/"
 				/>
-				
+				<BoxContent
+					imgPath={props.data.anglerarea.childImageSharp.fluid}
+					title="Angler Area"
+					description="The Spotify Music App is a Reactjs application
+		that lets the user search songs and create custom playlists"
+					tech="WordPress, PHP, HTML, CSS"
+					isExLink={true}
+					link="https://anglerarea.com/"
+				/>
+				<BoxContent
+					imgPath={props.data.mypetacademia.childImageSharp.fluid}
+					title="My Pet Academia"
+					description="The Spotify Music App is a Reactjs application
+		that lets the user search songs and create custom playlists"
+					tech="WordPress, PHP, HTML, CSS"
+					isExLink={true}
+					link="https://mypetacademia.com/"
+				/>
 			</BoxContentOuter>
 		</div>
 	</div>
@@ -43,7 +68,28 @@ export default IndexPage;
 
 export const query = graphql`
   query {
-    file(relativePath: {eq: "spotify-app.jpg"}) {
+    spotifyApp: file(relativePath: {eq: "spotify-app.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    anglerarea: file(relativePath: {eq: "home/anglerarea.com.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    mypetacademia: file(relativePath: {eq: "home/mypetacademia.com.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    aquariumEncyclopedia: file(relativePath: {eq: "home/aquarium_encyclopedia.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 400) {
           ...GatsbyImageSharpFluid
