@@ -29,7 +29,7 @@ const IndexPage = ( props ) => (
 					title="Aquarium Encyclopedia"
 					description="The Spotify Music App is a Reactjs application
 		that lets the user search songs and create custom playlists"
-					tech="JavaScript (Reactjs), HTML, CSS"
+					tech="JavaScript (Reactjs), HTML, CSS (SASS)"
 					link="/aquarium-encyclopedia/"
 				/>
 				<BoxContent
@@ -37,7 +37,7 @@ const IndexPage = ( props ) => (
 					title="Spotify Music App"
 					description="The Spotify Music App is a Reactjs application
 		that lets the user search songs and create custom playlists"
-					tech="JavaScript (Reactjs), HTML, CSS"
+					tech="JavaScript (Reactjs), HTML, CSS (SASS)"
 					link="/spotify-app/"
 				/>
 				<BoxContent
@@ -45,7 +45,7 @@ const IndexPage = ( props ) => (
 					title="Angler Area"
 					description="The Spotify Music App is a Reactjs application
 		that lets the user search songs and create custom playlists"
-					tech="WordPress, PHP, HTML, CSS"
+					tech="WordPress, PHP, HTML, CSS (SASS)"
 					isExLink={true}
 					link="https://anglerarea.com/"
 				/>
@@ -54,7 +54,7 @@ const IndexPage = ( props ) => (
 					title="My Pet Academia"
 					description="The Spotify Music App is a Reactjs application
 		that lets the user search songs and create custom playlists"
-					tech="WordPress, PHP, HTML, CSS"
+					tech="WordPress, PHP, HTML, CSS (SASS)"
 					isExLink={true}
 					link="https://mypetacademia.com/"
 				/>
