@@ -61,7 +61,7 @@ const BoxContent = (props) => {
 	};
 
   return (
-    <li className="box-content mb-4 col-sm-5 col-md-5 col-lg-3 ml-sm-3 mr-sm-3 ">
+    <li className="box-content d-flex flex-column mb-4 col-sm-5 col-md-5 col-lg-3 ml-sm-3 mr-sm-3 ">
     {checkImgLink()}
 		
 		<div className="content-text">
@@ -72,12 +72,12 @@ const BoxContent = (props) => {
 				</h3>
 			
 			<p>{props.description}</p>
-			<div>
-				<span className="tech-used">Technologies Used:</span>
-				<span>{props.tech}</span>
-			</div>
+			
 		</div>
-		
+		<div className="tech-used-container mt-auto mb-4">
+			<span className="tech-used">Technologies Used:</span>
+			<span>{props.tech}</span>
+		</div>
 
 		{
 			checkViewLink()

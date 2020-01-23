@@ -27,34 +27,33 @@ const IndexPage = ( props ) => (
 				<BoxContent
 					imgPath={props.data.aquariumEncyclopedia.childImageSharp.fluid}
 					title="Aquarium Encyclopedia"
-					description="The Spotify Music App is a Reactjs application
-		that lets the user search songs and create custom playlists"
-					tech="JavaScript (Reactjs), HTML, CSS (SASS)"
+					description="This app helps new and experienced aquarium owners with useful information regarding fish (temp, pH, etc.).
+		The user can either scroll through the list, or they can use different search filters to look up specific fish."
+					tech="JavaScript (Reactjs), HTML, CSS (SASS), Bootstrap"
 					link="/aquarium-encyclopedia/"
 				/>
 				<BoxContent
 					imgPath={props.data.spotifyApp.childImageSharp.fluid}
 					title="Spotify Music App"
 					description="The Spotify Music App is a Reactjs application
-		that lets the user search songs and create custom playlists"
-					tech="JavaScript (Reactjs), HTML, CSS (SASS)"
+		that lets the user search songs and create custom playlists and save them to their Spotify account."
+					tech="JavaScript (Reactjs), HTML, CSS (SASS), Bootstrap"
 					link="/spotify-app/"
 				/>
 				<BoxContent
 					imgPath={props.data.anglerarea.childImageSharp.fluid}
 					title="Angler Area"
-					description="The Spotify Music App is a Reactjs application
-		that lets the user search songs and create custom playlists"
-					tech="WordPress, PHP, HTML, CSS (SASS)"
+					description="Angler Area is a WordPress fishing blog aimed at beginners, however,
+		more experienced anglers may also benefit."
+					tech="WordPress, PHP, HTML, CSS (SASS), Bootstrap"
 					isExLink={true}
 					link="https://anglerarea.com/"
 				/>
 				<BoxContent
 					imgPath={props.data.mypetacademia.childImageSharp.fluid}
 					title="My Pet Academia"
-					description="The Spotify Music App is a Reactjs application
-		that lets the user search songs and create custom playlists"
-					tech="WordPress, PHP, HTML, CSS (SASS)"
+					description="My Pet Academia is a WordPress pets blog aimed at helping new pet owners in their journey."
+					tech="WordPress, PHP, HTML, CSS (SASS), Bootstrap"
 					isExLink={true}
 					link="https://mypetacademia.com/"
 				/>
