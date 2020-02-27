@@ -90,11 +90,6 @@ const Spotify = {
 		}
 		//the user didn't authorize yet or the authorization expired, take them to the authorization page
 		else{
-
-			alert(`
-				redirectUri = ${redirectUri}
-				`);
-
 			const accessUrl = `https://accounts.spotify.com/authorize?
 				client_id=${clientID}
 				&response_type=token
