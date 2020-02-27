@@ -92,7 +92,6 @@ const Spotify = {
 		else{
 
 			alert(`
-				clientID = ${clientID}
 				redirectUri = ${redirectUri}
 				`);
 
