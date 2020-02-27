@@ -1,7 +1,7 @@
 // require('dotenv').config(); 
 
-const clientID = process.env.AWS_SPOTIFY_ID;
-const redirectUri = process.env.AWS_REDIRECT_URL;//'https://www.davepui.com/';
+const clientID = process.env.SPOTIFY_ID;
+const redirectUri = process.env.REDIRECT_URL;//'https://www.davepui.com/';
 //msgDiv will be used to display information regarding the search
 //and custom playlists functions (errors in creating playlists, successful messages)
 let msgDiv;
