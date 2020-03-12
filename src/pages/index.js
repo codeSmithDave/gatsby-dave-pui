@@ -80,8 +80,8 @@ class IndexPage extends React.Component{
 console.log(window.innerHeight);
 
 		//change glass-container dimensions to match browser
-		glassContainer.current.style.width = `${canvas.width}px`;//window.innerWidth;
-		glassContainer.current.style.height = `${canvas.height}px`;//window.innerHeight;
+		// glassContainer.current.style.width = `${canvas.width}px`;//window.innerWidth;
+		// glassContainer.current.style.height = `${canvas.height}px`;//window.innerHeight;
 
 		// console.log(glassContainer.current.style);
 	}

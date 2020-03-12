@@ -3,7 +3,7 @@
 body{
 	.home-container{
 		text-align: center;
-		// display: none;
+		overflow-x: hidden;
 
 		.home-content-container{
 			height: inherit;
@@ -17,6 +17,8 @@ body{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			width: 100vw;
+			height: 100vh;
 
 			.glass-inner{
 				background: rgba(255,255,255, 0.8);
