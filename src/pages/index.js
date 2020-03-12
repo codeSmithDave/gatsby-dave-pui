@@ -74,8 +74,10 @@ class IndexPage extends React.Component{
 		homeLayout.height = window.innerHeight;
 		
 		//change canvas dimensions to match browser dimensions
-		canvas.width = homeLayout.clientWidth;
-		canvas.height = canvas.clientHeight;//window.innerHeight;
+		canvas.width = window.innerWidth;//homeLayout.clientWidth;
+		canvas.height = window.innerHeight;//canvas.clientHeight;//window.innerHeight;
+
+console.log(window.innerHeight);
 
 		//change glass-container dimensions to match browser
 		glassContainer.current.style.width = `${canvas.width}px`;//window.innerWidth;
@@ -264,7 +266,7 @@ class IndexPage extends React.Component{
 	    			<div className="glass-inner">
 	    				<div className="content">
 	    					<h1 className="obj-title">Dave's Portal</h1>
-				    		<h2 className="obj-sub-title">Front End Developer</h2>
+				    		<h2 className="obj-sub-title">Junior Web Developer</h2>
 				    		
 				    		<AnchorLink href="#box-cnt-container" className="obj-btn">Projects</AnchorLink>
 	    				</div>
