@@ -19,12 +19,11 @@ const BoxContent = (props) => {
 	  }
 	`);
 
-	
-
 	function checkImgLink(){
 		return(
 			props.isExLink ?
-				<a href={props.link}>
+				//if the link exists, use this html anchor to link to a page outside of this website
+				<a href={props.link} className="box-img-link">
 			    	<Img className="content-img" fluid={
 							//check if the user gave us an image; if not, use the default
 							(props.imgPath) ? props.imgPath : data.file.childImageSharp.fluid
@@ -32,7 +31,8 @@ const BoxContent = (props) => {
 					/>
 			    </a>
 			:
-				<Link to={props.link}>
+				//link doesn't exists, so use gatsby's internal link component
+				<Link to={props.link} className="box-img-link">
 			    	<Img className="content-img" fluid={
 							//check if the user gave us an image; if not, use the default
 							(props.imgPath) ? props.imgPath : data.file.childImageSharp.fluid
@@ -61,28 +61,23 @@ const BoxContent = (props) => {
 	};
 
   return (
-    <li className="box-content d-flex flex-column mb-4 col-sm-5 col-md-5 col-lg-3 ml-sm-3 mr-sm-3 ">
-    {checkImgLink()}
-		
-		<div className="content-text">
-			
-			
-				<h3 className="obj-title text-center">
-				{checkTitleLink()}
-				</h3>
-			
-			<p>{props.description}</p>
-			
-		</div>
-		<div className="tech-used-container mt-auto mb-4">
-			<span className="tech-used">Technologies Used:</span>
-			<span>{props.tech}</span>
-		</div>
-
-		{
-			checkViewLink()
-		}
-		
+    <li className="box-content d-flex flex-column mb-4  ">
+    	{checkImgLink()}
+    	<div className="box-inner-content">
+    		<div className="content-text">
+				<h2 className="obj-title text-center">
+					{checkTitleLink()}
+				</h2>
+				<p>{props.description}</p>
+			</div>
+			<div className="tech-used-container mt-auto">
+				<span className="tech-used">Technologies Used:</span>
+				<span>{props.tech}</span>
+			</div>
+			{
+				checkViewLink()
+			}
+    	</div>
     </li>
   );
 }

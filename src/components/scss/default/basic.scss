@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+
 $white: #fff;
 
 $black: #000;
@@ -17,6 +19,7 @@ $dark_grey1: #222;
 
 $blue: #1e99d0;
 $light_blue1: #ccf9ff;
+$dark_blue: rgb(27,39,53);
 
 $light_grey: #F3F3F3;
 $light_grey2: #C2C2C2;
@@ -25,6 +28,8 @@ body{
 	h1{font-size: 35PX;}
 	h2{font-size: 30px;}
 	h3{font-size: 25px;}
+
+	font-family: 'Rubik', sans-serif;
 
 	a{
 		color: $black;

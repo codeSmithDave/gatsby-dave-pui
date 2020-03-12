@@ -301,9 +301,9 @@ class AquariumEncyclopedia extends React.Component{
 					match = true;
 				}
 			}
-			
 
 			if(match) return true;
+			else return false;
 		});
 
 		this.setState({
@@ -324,7 +324,9 @@ class AquariumEncyclopedia extends React.Component{
 		//the user just deselected a filter, remove it from out list
 		else{
 			let newFilter = this.state.searchFilter.filter(fil => {
-				if(fil != filter) return fil;
+				if(fil !== filter) return fil;
+
+				return '';
 			});
 
 			this.setState({
@@ -333,12 +335,10 @@ class AquariumEncyclopedia extends React.Component{
 		}
 	}
 
-	
-
 	render(){
 		return(
 			<Layout>
-			    <SEO title="Home" />
+			    <SEO title="Aquarium Encyclopedia" />
 			    <div className="aquarium-encyclopedia-container pt-5 pb-5">
 
 					<div className="inner-aquarium-encyclopedia pt-5 pb-5 pl-3 pr-3 container-md">
@@ -362,31 +362,9 @@ class AquariumEncyclopedia extends React.Component{
 								]
 							}
 							updateSearchFilter={this.updateSearchFilter}
-							class="d-block ml-auto mr-auto mb-3"
+							className="d-block ml-auto mr-auto mb-3"
 						/>
-						{
-						// 	<div>
-						// 	<input type="button" name="button" value="Filters" onClick={this.filterClick} />
-						// </div>
-						}
-						{
-							// <div className="accordion-body accordion-body-collapse" ref={this.accordionBody}>
-							// 	<input
-			    //   					type="checkbox"
-			    //   					key="aa"
-			    //   					id="aa"
-			    //   					name="aa"
-			    //   					value="aa"
-			    //   					onChange={this.filtersChanged}
-			    //   				/>
-				   //    			<label
-				   //    				className="text-capitalize"
-				   //    				htmlFor="aa"
-				   //    				key="aa1">
-				   //    				aaSS
-				   //    			</label>
-							// </div>
-						}
+
 						<div className="content-container">
 							<BoxContentOuter>
 								{
