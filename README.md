@@ -7,6 +7,12 @@ Home page:
 ![image](https://github.com/codeSmithDave/gatsby-dave-pui/assets/29952471/eca76be4-4008-4216-91b6-54f26b32d8a7)
 
 
+![image](https://github.com/codeSmithDave/gatsby-dave-pui/assets/29952471/ed03e065-ede4-4340-a880-85f0575127fb)
+
+
+![image](https://github.com/codeSmithDave/gatsby-dave-pui/assets/29952471/40251e91-7a3a-4bb5-86eb-355ea401d93b)
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
