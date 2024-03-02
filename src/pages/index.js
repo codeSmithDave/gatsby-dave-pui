@@ -266,7 +266,7 @@ console.log(window.innerHeight);
 	    			<div className="glass-inner">
 	    				<div className="content">
 	    					<h1 className="obj-title">Dave's Portal</h1>
-				    		<h2 className="obj-sub-title">Junior Web Developer</h2>
+				    		<h2 className="obj-sub-title">Frontend Developer</h2>
 				    		
 				    		<AnchorLink href="#box-cnt-container" className="obj-btn">Projects</AnchorLink>
 	    				</div>
