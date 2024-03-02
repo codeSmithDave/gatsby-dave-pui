@@ -291,23 +291,6 @@ console.log(window.innerHeight);
 							tech="JavaScript (Reactjs), HTML, CSS (SASS), Bootstrap"
 							link="/spotify-app/"
 						/>
-						<BoxContent
-							imgPath={this.props.data.anglerarea.childImageSharp.fluid}
-							title="Angler Area"
-							description="Angler Area is a WordPress fishing blog aimed at beginners, however,
-				more experienced anglers may also benefit."
-							tech="WordPress, PHP, HTML, CSS (SASS), Bootstrap"
-							isExLink={true}
-							link="https://anglerarea.com/"
-						/>
-						<BoxContent
-							imgPath={this.props.data.mypetacademia.childImageSharp.fluid}
-							title="My Pet Academia"
-							description="My Pet Academia is a WordPress pets blog aimed at helping new pet owners in their journey."
-							tech="WordPress, PHP, HTML, CSS (SASS), Bootstrap"
-							isExLink={true}
-							link="https://mypetacademia.com/"
-						/>
 					</BoxContentOuter>
 		    	</div>
 		    	
