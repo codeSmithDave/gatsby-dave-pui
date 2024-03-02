@@ -6,7 +6,7 @@ This project is a multifaceted Gatsby ReactJS website, showcasing three distinct
 
 <h2>Home Page:</h2>
 
-The entry point of the website features a HTML5 canvas background, simulating a dynamic starry sky with stars that appear at random coordinates. These stars exhibit random sizes, colors, and incorporate fade-in and fade-out animations to create a mesmerizing visual effect.
+The entry point of the website features a HTML5 canvas background, simulating a dynamic starry sky with stars that appear at random coordinates. These stars exhibit random sizes, colors, and incorporate fade-in and fade-out animations to create a mesmerizing visual effect through the HTML5 canvas.
 The home page also serves as a portal to the other two ReactJS applications contained within the site, each linked for easy navigation.
 
 ![image](https://github.com/codeSmithDave/gatsby-dave-pui/assets/29952471/eca76be4-4008-4216-91b6-54f26b32d8a7)
